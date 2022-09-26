@@ -1,0 +1,11 @@
+#pragma once
+#include "Drawers/EllipseDrawer.hpp"
+#include "Drawers/ZeroDrawer.hpp"
+#include "Drawers/RectangleDrawer.hpp"
+#include "Drawers/CircleDrawer.hpp"
+#include "Drawers/SquareDrawer.hpp"
+#include "Drawers/TrapeziaDrawer.hpp"
+#include "Drawers/TriangleDrawer.hpp"
+#include "Drawers/RhombusDrawer.hpp"
+#include "Drawers/ParallelogramDrawer.hpp"
+#include "Drawers/PolygonDrawer.hpp"

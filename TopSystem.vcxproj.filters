@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Controls">
+      <UniqueIdentifier>{f50ed7f8-1a80-4038-9f94-df3ecfb0c4a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drawers">
+      <UniqueIdentifier>{b7d91f8c-05b7-42ad-a7e4-6c0f0fa67d9e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="App.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\Control.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Drawers\Drawer.cpp">
+      <Filter>Drawers</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawerStorage.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\Control.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\SimpleButton.hpp">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\SimpleEdit.hpp">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\SimpleStatic.hpp">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawers\Drawer.h">
+      <Filter>Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawers\EllipseDrawer.hpp">
+      <Filter>Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawersList.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawers\ZeroDrawer.hpp">
+      <Filter>Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawers\CircleDrawer.hpp">
+      <Filter>Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawers\SquareDrawer.hpp">
+      <Filter>Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawers\TrapeziaDrawer.hpp">
+      <Filter>Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawers\TriangleDrawer.hpp">
+      <Filter>Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawers\RhombusDrawer.hpp">
+      <Filter>Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawers\ParallelogramDrawer.hpp">
+      <Filter>Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawers\PolygonDrawer.hpp">
+      <Filter>Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawerStorage.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Drawers\RectangleDrawer.hpp">
+      <Filter>Drawers</Filter>
+    </None>
+  </ItemGroup>
+</Project>
