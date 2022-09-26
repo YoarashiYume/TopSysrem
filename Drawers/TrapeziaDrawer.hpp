@@ -11,8 +11,8 @@ protected:
 
 		auto xCenter = pixelToDPIX(static_cast<float>(this->windowWidth) / 2) + xOffset / 2;
 		auto yCenter = pixelToDPIY(static_cast<float>(windowHeight) / 2);
-		auto BottomCenter = pixelToDPIX(static_cast<float>(second) / 2);
-		auto TopCenter = pixelToDPIX(static_cast<float>(first) / 2);
+		auto BottomCenter = pixelToDPIX(static_cast<float>(first) / 2);
+		auto TopCenter = pixelToDPIX(static_cast<float>(second) / 2);
 		auto HeightCenter = pixelToDPIY(static_cast<float>(third) / 2);
 		//build Trapezia
 		pRT->DrawLine({ xCenter - BottomCenter,yCenter - HeightCenter }, { xCenter - TopCenter,yCenter + HeightCenter },brush,2);

@@ -64,8 +64,8 @@ void App::init_window()
 		this->className.c_str(),
 		this->appName.c_str(),
 		WS_DLGFRAME | WS_SYSMENU | WS_MINIMIZEBOX ,
-		(GetSystemMetrics(SM_CXSCREEN) - windowRC.right) / 2,
-		(GetSystemMetrics(SM_CXSCREEN) - windowRC.bottom) / 2,
+		0,
+		0,
 		this->width, windowRC.bottom, nullptr, nullptr, nullptr, this
 	);
 	if (!this->mainWindow)
@@ -172,7 +172,7 @@ LRESULT App::window_proc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 		{
 			drawer->draw(this->mainWindow, pRT, fArg, sArg, tArg);
 			fArg = sArg = tArg = 0;
-			RedrawWindow(this->mainWindow, nullptr, nullptr, RDW_INTERNALPAINT);
+			InvalidateRect(this->mainWindow, nullptr, false);
 		}
 		
 		return 0;
