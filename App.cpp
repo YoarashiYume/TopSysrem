@@ -21,6 +21,12 @@ App::App(const std::uint16_t windowWidth, const std::uint16_t windowHeight)
 	}
 }
 
+App::~App()
+{
+	pD2D1Factory->Release();
+	pRT->Release();
+}
+
 std::int32_t App::run()
 {
 	if (!this->isCorrectInit)

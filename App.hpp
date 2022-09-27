@@ -89,6 +89,7 @@ public:
 	App(App &&) = delete;
 
 	App(const std::uint16_t windowWidth, const std::uint16_t windowHeight);
+	~App();
 
 	std::int32_t run();
 private:
