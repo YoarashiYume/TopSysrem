@@ -4,6 +4,7 @@ Drawer::Drawer(const float xDPI, const float yDPI, const std::uint32_t offsetX, 
 	:dpiX(xDPI), dpiY(yDPI), xOffset(pixelToDPIX(static_cast<float>(offsetX))), 
 	windowWidth(windowWidth), windowHeight(windowHeight)
 {
+	//Creates brush
 	pRT->CreateSolidColorBrush(D2D1::ColorF(D2D1::ColorF::Black), &this->brush);
 }
 
@@ -43,6 +44,7 @@ void Drawer::drawFigure(HWND hwnd, ID2D1HwndRenderTarget* pRT,const std::uint32_
 {
 	PAINTSTRUCT pt;
 	BeginPaint(hwnd, &pt);
+	//clears field and draws
 	pRT->BeginDraw();
 	pRT->Clear(D2D1::ColorF(D2D1::ColorF::White));
 	this->draw(pRT,first, second, third);

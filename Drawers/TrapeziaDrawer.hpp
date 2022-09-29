@@ -2,10 +2,19 @@
 #define TrapeziaDrawer_H
 
 #include "Drawer.h"
-
+/**
+\brief Trapezia painter
+*/
 class TrapeziaDrawer : public Drawer
 {
 protected:
+	/**
+	\brief implementation of the method responsible for drawing
+	\param pRT pointer to drawing interface
+	\param first Top base length
+	\param second Bottom base length
+	\param third Height
+	*/
 	virtual void draw(ID2D1HwndRenderTarget* pRT, const std::uint32_t first, const std::uint32_t second, const std::uint32_t third) override
 	{
 
@@ -24,6 +33,10 @@ public:
 	TrapeziaDrawer() = delete;
 	TrapeziaDrawer(const TrapeziaDrawer&) = delete;
 	TrapeziaDrawer(TrapeziaDrawer&&) = delete;
+	/**
+	\brief Constructor
+	\param old Previous Drawer
+	*/
 	TrapeziaDrawer(Drawer&& old)
 		:Drawer(std::move(old))
 	{

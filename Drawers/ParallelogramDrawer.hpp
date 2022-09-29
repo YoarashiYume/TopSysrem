@@ -5,11 +5,20 @@
 
 #include <cmath>
 
-
+/**
+\brief Parallelogram painter
+*/
 class ParallelogramDrawer : public Drawer
 {
 
 protected:
+	/**
+	\brief implementation of the method for drawing
+	\param pRT pointer to drawing interface
+	\param first 'Vertical' length
+	\param second Bottom base length
+	\param third Corner
+	*/
 	virtual void draw(ID2D1HwndRenderTarget* pRT, const std::uint32_t first, const std::uint32_t second, const std::uint32_t third) override
 	{
 		constexpr double PI = 3.14159265358979323846;
@@ -37,6 +46,10 @@ public:
 	ParallelogramDrawer(const ParallelogramDrawer&) = delete;
 	ParallelogramDrawer(ParallelogramDrawer&&) = delete;
 	ParallelogramDrawer(Drawer&& old)
+	/**
+	\brief Constructor
+	\param old Previous Drawer
+	*/
 		:Drawer(std::move(old))
 	{
 

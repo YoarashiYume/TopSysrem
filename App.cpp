@@ -390,7 +390,7 @@ void App::switchToTriangle()
 	changeDatavisible(false, App::InputDataList::THIRD);
 
 	this->clearData();
-	this->staticList.at(static_cast<std::uint32_t>(App::InputDataList::FIRST))->setText(L"Side length (px)");
+	this->staticList.at(static_cast<std::uint32_t>(App::InputDataList::FIRST))->setText(L"Radius of the circumscribed (px)");
 	drawer->setDrawer(DrawerStorage::Figure::TRIANGLE);
 }
 
