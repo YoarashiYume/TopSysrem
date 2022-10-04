@@ -2,7 +2,6 @@
 #define Drawer_H
 
 #include <d2d1.h>
-#include <cstdint>
 #include <utility> //std::move
 
 /**
